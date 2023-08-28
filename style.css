@@ -8,42 +8,51 @@ body {
   font-family: "Exo", sans-serif;
   height: 100vh;
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   padding: 1rem;
+  margin: 0;
   /* text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6); */
 }
 
 .profile-picture {
   border-radius: 50%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 200px;
   height: 200px;
+  object-fit: cover;
 }
 
 .Space {
   display: flex;
+  justify-content: space-between;
 }
 .left {
-  width: 40vw;
+  width: 40%;
+  padding-right: 2rem;
   border-right: 5px solid black;
 }
 
 .info {
-  line-height: 2rem;
+  line-height: 2;
+}
+
+.about {
 }
 .right {
-  width: 60vw;
+  width: 60%;
   padding: 1rem;
 }
 
 .title {
   text-align: center;
   margin: 1rem;
+  /* margin-bottom: 2rem; */
 }
 .highlight {
   color: var(--primary-color);
+  font-weight: bold;
+  font-style: normal;
 }
 
 .programme {
@@ -51,7 +60,7 @@ body {
 
 h1 {
   font-size: 3rem;
-  /* text-align: center; */
+  text-align: center;
   margin-top: 1rem;
 }
 h2 {
@@ -62,29 +71,40 @@ h2 {
 h3 {
   text-align: center;
   text-transform: uppercase;
-  font-size: 2.5rem;
-  padding: 2rem;
+  font-size: 2rem;
+  margin: 2rem;
 }
 
 h4 {
   color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
 }
 p {
   margin-bottom: 1rem;
-  /* line-height: 2rem; */
+  line-height: 1.3rem;
+  /* à voir après */
 }
 span {
   font-style: italic;
 }
 
-/* li,
-h4,
-h3,
-h2,
-h1 {
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-} */
-li {
+/* li {
   list-style: none;
+} */
+ul {
+  padding-left: 1.5rem;
+}
+
+ul li {
+  position: relative;
+  margin-bottom: 0.5rem; /* Espacement entre les éléments de la liste */
+}
+
+ul ul {
+  list-style-type: none; /* Suppression des puces pour les sous-listes */
+  margin-top: 0.2rem; /* Ajustement de l'espacement en haut */
+  padding-left: 1.5rem; /* Indentation des sous-listes */
+  display: flex;
+  justify-content: space-between;
 }
