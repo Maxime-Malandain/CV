@@ -1,5 +1,5 @@
 :root {
-  --primary-color: rgb(234, 171, 0);
+  --primary-color: #d1b421;
   --secondary-color: #e2ebf0;
   --tertiary-color: #f2f2f2;
 }
@@ -8,56 +8,82 @@ body {
   font-family: "Exo", sans-serif;
   height: 100vh;
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-  letter-spacing: 1px;
+  letter-spacing: 0.05rem;
   padding: 1rem;
   margin: 0;
   /* text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6); */
+  /* text-shadow: 24px 121px 211px rgba(0, 0, 0, 0.16); */
 }
 
 .profile-picture {
   border-radius: 50%;
   display: block;
   margin: 0 auto;
-  width: 200px;
-  height: 200px;
+  width: 16rem;
+  height: 16rem;
   object-fit: cover;
 }
 
-.Space {
+.container {
   display: flex;
   justify-content: space-between;
 }
 .left {
   width: 40%;
   padding-right: 2rem;
-  border-right: 5px solid black;
+  border-right: 0.3rem solid black;
 }
 
 .info {
-  line-height: 2;
+  line-height: 2rem;
 }
-
-.about {
+.other {
+  display: flex;
+  justify-content: center;
+}
+.category {
+  padding-bottom: 1rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.other-left,
+.other-right {
+  line-height: 1.4rem;
+}
+.other-left {
+  width: 50%;
+  border-right: 0.2rem solid black;
+  /* text-align: center; */
+}
+.other-right {
+  width: 50%;
+  padding-left: 2rem;
+  text-align: center;
+}
+.small-svg {
+  width: 2rem;
+  height: auto;
+  margin-right: 5px;
+  vertical-align: middle;
 }
 .right {
   width: 60%;
   padding: 1rem;
 }
-
 .title {
   text-align: center;
   margin: 1rem;
-  /* margin-bottom: 2rem; */
+  line-height: 5rem;
+}
+.title-underline {
+  font-size: 1.3rem;
+  padding-bottom: 0.3rem;
 }
 .highlight {
   color: var(--primary-color);
   font-weight: bold;
   font-style: normal;
 }
-
-.programme {
-}
-
 h1 {
   font-size: 3rem;
   text-align: center;
@@ -88,23 +114,20 @@ p {
 span {
   font-style: italic;
 }
-
-/* li {
+.skills {
+  color: var(--primary-color);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+li {
   list-style: none;
-} */
-ul {
-  padding-left: 1.5rem;
 }
-
-ul li {
-  position: relative;
-  margin-bottom: 0.5rem; /* Espacement entre les éléments de la liste */
-}
-
-ul ul {
-  list-style-type: none; /* Suppression des puces pour les sous-listes */
-  margin-top: 0.2rem; /* Ajustement de l'espacement en haut */
-  padding-left: 1.5rem; /* Indentation des sous-listes */
+.soft {
   display: flex;
-  justify-content: space-between;
+  line-height: 1.2rem;
 }
+.soft-left,
+.soft-right {
+  width: 50%;
+}
+/* @media print {} */
