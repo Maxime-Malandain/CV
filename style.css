@@ -1,7 +1,5 @@
 :root {
-  --primary-color: #d1b421;
-  --secondary-color: #e2ebf0;
-  --tertiary-color: #f2f2f2;
+  --primary-color: #1f7f62;
 }
 
 body {
@@ -9,10 +7,8 @@ body {
   height: 100vh;
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   letter-spacing: 0.05rem;
-  padding: 1rem;
   margin: 0;
-  /* text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6); */
-  /* text-shadow: 24px 121px 211px rgba(0, 0, 0, 0.16); */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .profile-picture {
@@ -29,9 +25,12 @@ body {
   justify-content: space-between;
 }
 .left {
+  color: white;
+  background-color: #2c3e4e;
   width: 40%;
-  padding-right: 2rem;
+  padding: 1rem;
   border-right: 0.3rem solid black;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
 }
 
 .info {
@@ -53,7 +52,6 @@ body {
 .other-left {
   width: 50%;
   border-right: 0.2rem solid black;
-  /* text-align: center; */
 }
 .other-right {
   width: 50%;
@@ -61,7 +59,7 @@ body {
   text-align: center;
 }
 .small-svg {
-  width: 2rem;
+  width: 2.5rem;
   height: auto;
   margin-right: 5px;
   vertical-align: middle;
@@ -69,6 +67,7 @@ body {
 .right {
   width: 60%;
   padding: 1rem;
+  font-size: 1.1rem;
 }
 .title {
   text-align: center;
@@ -83,6 +82,7 @@ body {
   color: var(--primary-color);
   font-weight: bold;
   font-style: normal;
+  text-shadow: 2px 2px 4px #72b8a303;
 }
 h1 {
   font-size: 3rem;
@@ -91,7 +91,9 @@ h1 {
 }
 h2 {
   font-size: 3rem;
+  font-weight: bold;
   color: var(--primary-color);
+  text-shadow: 2px 2px 4px #72b8a303;
 }
 
 h3 {
@@ -103,31 +105,34 @@ h3 {
 
 h4 {
   color: var(--primary-color);
+  font-weight: bold;
   margin-bottom: 0.5rem;
   margin-top: 1.5rem;
+  text-shadow: 2px 2px 4px #72b8a303;
 }
 p {
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
   line-height: 1.3rem;
-  /* à voir après */
 }
 span {
   font-style: italic;
 }
 .skills {
   color: var(--primary-color);
+  font-weight: bold;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px #72b8a303;
 }
 li {
   list-style: none;
 }
 .soft {
   display: flex;
-  line-height: 1.2rem;
+  line-height: 1.6rem;
 }
 .soft-left,
 .soft-right {
   width: 50%;
 }
-/* @media print {} */
