@@ -8,7 +8,7 @@ body {
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   letter-spacing: 0.05rem;
   margin: 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .profile-picture {
@@ -16,8 +16,9 @@ body {
   display: block;
   margin: 0 auto;
   width: 16rem;
-  height: 16rem;
+  height: 20rem;
   object-fit: cover;
+  transform: rotate(-5deg); /* Incline l'image de 5 degrés vers la droite */
 }
 
 .container {
@@ -30,7 +31,7 @@ body {
   width: 40%;
   padding: 1rem;
   border-right: 0.3rem solid black;
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.1);
 }
 
 .info {
@@ -48,13 +49,12 @@ body {
 .other-left,
 .other-right {
   line-height: 1.4rem;
+  width: 50%;
 }
 .other-left {
-  width: 50%;
   border-right: 0.2rem solid black;
 }
 .other-right {
-  width: 50%;
   padding-left: 2rem;
   text-align: center;
 }
@@ -82,7 +82,7 @@ body {
   color: var(--primary-color);
   font-weight: bold;
   font-style: normal;
-  text-shadow: 2px 2px 4px #72b8a303;
+  text-shadow: 2px 2px 4px #72b8a301;
 }
 h1 {
   font-size: 3rem;
@@ -93,7 +93,7 @@ h2 {
   font-size: 3rem;
   font-weight: bold;
   color: var(--primary-color);
-  text-shadow: 2px 2px 4px #72b8a303;
+  text-shadow: 2px 2px 4px #72b8a301;
 }
 
 h3 {
@@ -108,7 +108,7 @@ h4 {
   font-weight: bold;
   margin-bottom: 0.5rem;
   margin-top: 1.5rem;
-  text-shadow: 2px 2px 4px #72b8a303;
+  text-shadow: 2px 2px 4px #72b8a301;
 }
 p {
   margin-top: 0.5rem;
@@ -123,7 +123,7 @@ span {
   font-weight: bold;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
-  text-shadow: 2px 2px 4px #72b8a303;
+  text-shadow: 2px 2px 4px #72b8a301;
 }
 li {
   list-style: none;
